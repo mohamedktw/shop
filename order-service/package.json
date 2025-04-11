@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prisma:migrate": "npx -r dotenv/config prisma migrate dev --schema=src/prisma/schema.prisma",
     "prisma:init": "npx prisma generate",
     "start": "ts-node-dev --respawn --transpile-only src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
